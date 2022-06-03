@@ -1,4 +1,4 @@
-import { red } from '@mui/material/colors';
+import { yellow } from '@mui/material/colors';
 import { createTheme } from '@mui/material';
 
 // Default light theme
@@ -21,10 +21,10 @@ export const theme = createTheme({
       contrastText: '#000',
     },
     error: {
-      main: red.A400,
+      main: yellow[900],
     },
     background: {
-      default: '#282c34',
+      default: '#ebebeb',
     },
   },
 });

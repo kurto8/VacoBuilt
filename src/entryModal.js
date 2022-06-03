@@ -28,9 +28,9 @@ export default function EntryModal({ openModal, setOpenModal, handleEdit, handle
   return (
     <div>
       <Dialog open={openModal} fullWidth={true}>
-        <DialogTitle>Edit Blog</DialogTitle>
+        <DialogTitle>{`${id ? 'Edit' : 'Write'} Blog`}</DialogTitle>
         <DialogContent>
-          <DialogContentText>Edit Title</DialogContentText>
+          <DialogContentText>{`${id ? 'Edit' : 'Add'} Title`}</DialogContentText>
           <TextField
             autoFocus
             fullWidth
@@ -38,7 +38,7 @@ export default function EntryModal({ openModal, setOpenModal, handleEdit, handle
             defaultValue={currTitle}
             onChange={(e) => setTitle(e.target.value)}
           />
-          <DialogContentText>Edit Text</DialogContentText>
+          <DialogContentText>{`${id ? 'Edit' : 'Add'} Text`}</DialogContentText>
           <TextField
             // autoFocus
             fullWidth
@@ -50,7 +50,7 @@ export default function EntryModal({ openModal, setOpenModal, handleEdit, handle
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose}>Cancel</Button>
-          <Button onClick={handleSubmit}>Submit Edit</Button>
+          <Button onClick={handleSubmit}>{`Submit ${id ? 'Edit' : 'Blog'}`}</Button>
         </DialogActions>
       </Dialog>
     </div>

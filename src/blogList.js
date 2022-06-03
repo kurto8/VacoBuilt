@@ -14,19 +14,17 @@ export default function BlogList({ posts }) {
         variant='h5'
         component='h4'
         color='primary.dark'
-        sx={{ pt: 12 }}
+        sx={{ pt: 12, pl: 2 }}
         gutterBottom>
         BLOG LIST
       </Typography>
       <List>
         {posts.map((post) => (
-          <Paper key={post.id}>
-            <ListItem key={post.id} disablePadding>
-              <ListItemButton>
-                <ListItemText primary={post.title} />
-              </ListItemButton>
-            </ListItem>
-          </Paper>
+          <ListItem key={post.id} disablePadding>
+            <ListItemButton>
+              <ListItemText primary={post.title} />
+            </ListItemButton>
+          </ListItem>
         ))}
       </List>
     </>

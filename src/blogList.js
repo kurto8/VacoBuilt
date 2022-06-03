@@ -1,6 +1,5 @@
 import {
   Typography,
-  Paper,
   List,
   ListItem,
   ListItemButton,

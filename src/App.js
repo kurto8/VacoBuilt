@@ -141,3 +141,17 @@ export default function App() {
     </Box>
   );
 }
+
+// • GET /posts/{name}/generateSampleData
+// o Loads sample data into the blog so you can display and delete as you see fit without
+// having to continually create your own content.
+
+// • GET /posts/{name}/{id}
+// o Returns a single blog post in JSON format corresponding to the provided ID
+// o Example response:
+// ▪ { “response”:
+//  { “id”: 123,
+//  “text”: “This is the content of my blog post.”,
+//  “timestamp”: “Sat Jul 01 09:46:02 EST 2017”,
+//  “title”: “The Title of My Blog Post”}
+// }
